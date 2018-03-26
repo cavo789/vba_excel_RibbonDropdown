@@ -84,6 +84,9 @@ Private Const cRangeName = "_rngParamsPeriod"
 Private Const cName = "_Period"
 ```
 3. Create new ranges in your Excel sheet with the list of values and give them the name you've mentioned in VBA (like `_rngParamsSecond`)
+4. Edit your ribbon and duplicate the dropdown line, example below. Just change hightlight values.
+
+![Second list](images/ui_editor_second.png)
 
 ## Author
 
