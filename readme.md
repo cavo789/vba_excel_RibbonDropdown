@@ -21,6 +21,7 @@ By using the VBA code below, everything will be automatic :
 
 - [Install](#install)
 - [Usage](#usage)
+- [Remarks](#remarks)
 - [Author](#author)
 - [License](#license)
 
@@ -87,6 +88,10 @@ Private Const cName = "_Period"
 4. Edit your ribbon and duplicate the dropdown line, example below. Just change hightlight values.
 
 ![Second list](images/ui_editor_second.png)
+
+## Remarks
+
+* There is a limitation concerning the number of entries in a dropdown. I don't know the exact figure but if your list is made of more than ... items, Excel won't be able to load it and your dropdown will remains empty even when everyting was correctly coded. *(I've just tried right now with 1500 entries and it's too big)*
 
 ## Author
 
