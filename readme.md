@@ -1,3 +1,5 @@
+![Banner](images/banner.jpg)
+
 # Excel - VBA - Ribbon - Load dropdown from Excel's range
 
 > How to very easily load an Excel range into the ribbon as a dropdown
@@ -12,10 +14,10 @@ The list of possible values are taken from a range like here below. That range c
 
 By using the VBA code below, everything will be automatic :
 
-* on the opening of the workbook, the ribbon will be initialized with the content of the range,
-* if you add / edit / remove values in the list, just save and close the file then reopen it to update the ribbon (you can also add VBA code to `invalidate` the ribbon of course),
-* by selecting a value from the dropdown, a name will be created / updated in the workbook so you can use that value in Excel's formulas,
-* you'll be able to easily get the selected value in VBA.
+- on the opening of the workbook, the ribbon will be initialized with the content of the range,
+- if you add / edit / remove values in the list, just save and close the file then reopen it to update the ribbon (you can also add VBA code to `invalidate` the ribbon of course),
+- by selecting a value from the dropdown, a name will be created / updated in the workbook so you can use that value in Excel's formulas,
+- you'll be able to easily get the selected value in VBA.
 
 ## Table of Contents
 
@@ -35,7 +37,8 @@ Get a copy of the `modToolbar_cbxPeriod.bas` file and import it into your Excel 
 
 1. go to VBE (press `ALT-F11` to open the editor)
 2. right-click on the `Modules`, select `Import File...` and import a copy of `modToolbar_cbxPeriod.bas`
-	![](images/vbe_import.png)
+
+   ![](images/vbe_import.png)
 3. Save and close the file
 
 ### Create the list
@@ -54,7 +57,7 @@ Give that range a name. In our example, the name is `_rngParamsPeriod`. If you w
 Private Const cRangeName = "_rngParamsPeriod"
 ```
 
-*Most of times, the range will be in a hidden sheet.*
+_Most of times, the range will be in a hidden sheet._
 
 ### ribbon.xml
 
@@ -84,6 +87,7 @@ Private Const cRangeName = "_rngParamsPeriod"
 
 Private Const cName = "_Period"
 ```
+
 3. Create new ranges in your Excel sheet with the list of values and give them the name you've mentioned in VBA (like `_rngParamsSecond`)
 4. Edit your ribbon and duplicate the dropdown line, example below. Just change hightlight values.
 
@@ -91,7 +95,7 @@ Private Const cName = "_Period"
 
 ## Remarks
 
-* There is a limitation concerning the number of entries in a dropdown. I don't know the exact figure but if your list is made of more than ... items, Excel won't be able to load it and your dropdown will remains empty even when everyting was correctly coded. *(I've just tried right now with 1500 entries and it's too big)*
+- There is a limitation concerning the number of entries in a dropdown. I don't know the exact figure but if your list is made of more than ... items, Excel won't be able to load it and your dropdown will remains empty even when everyting was correctly coded. _(I've just tried right now with 1500 entries and it's too big)_
 
 ## Author
 
