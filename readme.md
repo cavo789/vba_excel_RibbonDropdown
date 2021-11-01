@@ -1,6 +1,6 @@
-![Banner](images/banner.jpg)
-
 # Excel - VBA - Ribbon - Load dropdown from Excel's range
+
+![Banner](./banner.svg)
 
 > How to very easily load an Excel range into the ribbon as a dropdown
 
