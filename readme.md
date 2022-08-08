@@ -63,7 +63,7 @@ _Most of times, the range will be in a hidden sheet._
 
 Get a copy of the `ribbon.xml` content (f.i. copy the content into the clipboard).
 
-1. Start a ribbon editor like, for instance, [Custom UI Editor](http://openxmldeveloper.org/blog/b/openxmldeveloper/archive/2006/05/26/customuieditor.aspx) (that one or any other one)
+1. Start a ribbon editor like, for instance, [Custom UI Editor](https://bettersolutions.com/vba/ribbon/custom-ui-editor-download.htm) (that one or any other one)
 2. Paste there the code for the ribbon
 3. Save and close the file
 
